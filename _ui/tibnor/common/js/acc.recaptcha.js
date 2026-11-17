@@ -32,39 +32,15 @@ ACC.recaptcha = {
   vatVal: "",
 
   bindReCaptcha: function () {
-    var apiReCaptchaSrc = "//www.google.com/recaptcha/api.js";
-    $("head").append(
-      $("<script>")
-        .attr("async", true)
-        .attr("defer", true)
-        .attr("type", "text/javascript")
-        .attr("src", apiReCaptchaSrc)
-    );
-    ACC.recaptcha.checkingInit();
+    $(".js-g-recaptcha")
+      .removeClass("hidden g-recaptcha")
+      .removeAttr("data-sitekey");
   },
 
-  checkingInit: function () {
-    intervalGrecaptcha = window.setInterval(function () {
-      if (window.grecaptcha) {
-        $(".js-g-recaptcha").removeClass("hidden");
-        clearInterval(intervalGrecaptcha);
-      } else if (pingCount++ === 5) {
-        clearInterval(intervalGrecaptcha);
-        alert("Sth is wrong with g-reCaptcha. You can not proceed form.");
-      };
-    }, 200);
-  },
+  checkingInit: function () {},
 
   clearForm: function (form) {
-    if (window.grecaptcha) {
-      grecaptcha.reset();
-      ACC.forms.clearForm(form);
-    } else {
-      setTimeout(function () {
-        alert(" Sth is wrong with g-reCaptcha. The page will be refreshed");
-        location.reload();
-      }, 500);
-    }
+    ACC.forms.clearForm(form);
   },
 
   handleVatValue: function () {
