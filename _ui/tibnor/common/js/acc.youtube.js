@@ -28,9 +28,7 @@ ACC.youtube = {
     }
   },
   bindYtApi: function () {
-    var tag = document.createElement("script");
-    tag.src = "https://www.youtube.com/iframe_api";
-    $("head").append(tag);
+    return;
   },
   handleYtVideo: function (players) {
     $(".js-yt-image").on("click", function () {
