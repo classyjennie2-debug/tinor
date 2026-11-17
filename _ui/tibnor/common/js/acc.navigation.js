@@ -420,7 +420,10 @@ ACC.navigation = {
         }
 
         function openLevel1(e, parent) {
-            e.preventDefault();
+            var href = e.currentTarget && $(e.currentTarget).attr("href");
+            if (!href || href === "#") {
+                e.preventDefault();
+            }
             ACC.navigation.closeNavigation();
             parent.addClass('current');
 
