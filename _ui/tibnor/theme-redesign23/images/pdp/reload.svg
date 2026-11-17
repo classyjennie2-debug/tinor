@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/action/cached_24px</title>
+    <defs>
+        <path d="M12.6666667,5.33333333 L10,8 L12,8 C12,10.2066667 10.2066667,12 8,12 C7.32666667,12 6.68666667,11.8333333 6.13333333,11.5333333 L5.16,12.5066667 C5.98,13.0266667 6.95333333,13.3333333 8,13.3333333 C10.9466667,13.3333333 13.3333333,10.9466667 13.3333333,8 L15.3333333,8 L12.6666667,5.33333333 Z M4,8 C4,5.79333333 5.79333333,4 8,4 C8.67333333,4 9.31333333,4.16666667 9.86666667,4.46666667 L10.84,3.49333333 C10.02,2.97333333 9.04666667,2.66666667 8,2.66666667 C5.05333333,2.66666667 2.66666667,5.05333333 2.66666667,8 L0.666666667,8 L3.33333333,10.6666667 L6,8 L4,8 Z" id="path-1"></path>
+    </defs>
+    <g id="Product-details-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PDP-V3-Added" transform="translate(-505.000000, -352.000000)">
+            <g id="Group-5" transform="translate(262.000000, 334.000000)">
+                <g id="icon/action/cached_24px" transform="translate(243.000000, 16.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="-↳Color" fill="#005188" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
